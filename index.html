@@ -41,15 +41,33 @@
       box-shadow: 0px 0px 10px 5px #1b1b1b;
     }
     
-    .all_across {
-      width: 100%;
+    .outer_container {
+      position: relative;
+      min-height: 300px;
+      height: 100%;
+      width:100%;
     }
     
-    .pricing_info {
-      display: inline-block;
-      background-color: #fff;
-      color: rgb(34, 34, 34);
-      padding: 5px;
+    .inner_container_top {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      text-align; center;
+    }
+    
+    .inner_container_bottom {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align; center;
+    }
+    
+    .three_in_a_row {
+      width: 20%;
+    }
+    
+    .all_across {
+      width: 100% !important;
     }
     
     @media (min-width: 1200px) {
@@ -74,6 +92,13 @@
       .text_box {
         width: 100%;
       }
+      .outer_container_top {
+        min-height: 250px;
+      }
+    }
+    
+    .all_across {
+      width: 100% !important;
     }
     
   </style>
@@ -114,12 +139,24 @@
       
       <div class="text_box">
         
-        <p>
-          Buy Emoncms.org credits from the <br>
-          <strong><a href="https://openenergymonitor.com/emoncms-org-credit/">OpenEneryMonitor Shop</a></strong>
-        </p>
-    
-        <img src="images/shoppingcart.png" alt="OpenEnergyMonitor Shop">
+        <div class="outer_container outer_container_top">
+          
+          <div class="inner_container_top">
+        
+            <p>
+              Buy Emoncms.org credits from the <br>
+              <strong><a href="https://openenergymonitor.com/emoncms-org-credit/">OpenEneryMonitor Shop</a></strong>
+            </p>
+            
+          </div>
+          
+          <div class="inner_container_bottom">
+      
+            <img src="images/shoppingcart.png" alt="OpenEnergyMonitor Shop">
+          
+          </div>
+          
+        </div>
           
       </div>
       
@@ -132,15 +169,27 @@
       -->
       
       <div class="text_box">
+        
+        <div class="outer_container">
+          
+          <div class="inner_container_top">
+              
+            <p>
+              Buy any hardware from the <strong><a href="https://openenergymonitor.com">OpenEneryMonitor Shop</a></strong> <br>
+              and you will get Emoncms.org credits worth <br>
+              <strong>20%</strong> of the items in your cart
+            </p>
             
-        <p>
-          Buy any hardware from the <strong><a href="https://openenergymonitor.com">OpenEneryMonitor Shop</a></strong> <br>
-          and you will get Emoncms.org credits worth <br>
-          <strong>20%</strong> of the items in your cart
-        </p>
+          </div>
+          
+          <div class="inner_container_bottom">
+            
+            <img src="images/hardware_shop.png" alt="OpenEnergyMonitor Shop">
         
-        <img src="images/hardware_shop.png" alt="OpenEnergyMonitor Shop">
+          </div>
         
+        </div>
+      
       </div>
       
       <!-- /END BOX  -->
@@ -189,18 +238,24 @@
        #############################################################################
       -->
       
-      <div class="text_box">
+      <div class="text_box all_across">
         
         <p>
-          <strong>"... How much will it cost?"</strong> <br><br>
-          
-          Say you have bought an <a href="https://openenergymonitor.com/emonpi-3/">emonPi</a>:
+          <strong>"... How much will it cost?"</strong> <br>
+          <br>
+          Here's an example:
+          <br>
+        </p>
+        
+      </div>
+      
+      <div class="text_box three_in_a_row">
           
         <p>
-          ======================= <br>
-          <i>Picture of an emonPi</i><br>
-          ======================= <br>
+          You have an <a href="https://openenergymonitor.com/emonpi-3/">emonPi</a>
         </p>
+          
+        <img src="images/emonpi.png" alt="OpenEnergyMonitor Shop">
       
       </div>
       
@@ -212,17 +267,14 @@
        #############################################################################
       -->
       
-      <div class="text_box">
+      <div class="text_box three_in_a_row">
         
         <p>
-          You have a <a href="https://openenergymonitor.com/100a-max-clip-on-current-sensor-ct/">Current Sensor</a> and an <a href="https://openenergymonitor.com/ac-ac-power-supply-adapter-ac-voltage-sensor-uk-plug/">AC Voltage Sensor</a> to monitor power:
+          A <a href="https://openenergymonitor.com/100a-max-clip-on-current-sensor-ct/">current sensor</a> &plus; <a href="https://openenergymonitor.com/ac-ac-power-supply-adapter-ac-voltage-sensor-uk-plug/">AC voltage sensor</a> to monitor power
         </p>
           
-        <p>
-          ======================= <br>
-          <i>Picture of clips and ac sensor</i><br>
-          ======================= <br>
-        </p>
+        <img src="images/ct_sensor.png" alt="OpenEnergyMonitor Shop">
+        <img src="images/ac_sensor.png" alt="OpenEnergyMonitor Shop">
         
       </div>
       
@@ -234,17 +286,14 @@
        #############################################################################
       -->
       
-      <div class="text_box">
+      <div class="text_box three_in_a_row">
         
         <p>
-          You also have a <a href="https://openenergymonitor.com/rj45-encapsulated-ds18b20-temperature-sensor/">temperature sensor</a>:
+          And a
+          <a href="https://openenergymonitor.com/rj45-encapsulated-ds18b20-temperature-sensor/">temperature sensor</a>
         </p>
         
-        <p>
-          ======================= <br>
-          <i>Picture of temp sensor</i><br>
-          ======================= <br>
-        </p>
+        <img src="images/temperature_sensor.png" alt="OpenEnergyMonitor Shop">
         
       </div>
       
@@ -256,7 +305,7 @@
        #############################################################################
       -->
   
-      <div class="text_box">
+      <div class="text_box all_across">
     
         <p>
           Real-time data from the <a href="https://openenergymonitor.com/emonpi-3/">emonPi</a> can be logged to a <strong> feed</strong>. <br>
@@ -265,46 +314,45 @@
           
       </div>
       
-      <div class="text_box">
+      <div class="text_box three_in_a_row">
           
-      <p>
-        In one feed, you might want to log the <strong>power</strong> used over time:
-      </p>
+        <p>
+          In one feed, you might want to log the <strong>power</strong> used over time:
+        </p>
+          
+        <img src="images/power_graph.png" alt="OpenEnergyMonitor Shop" width="168px" height="168px">
+       
+      </div>
+      
+      <div class="text_box three_in_a_row">
         
         <p>
-          ======================= <br>
-          <i>Picture of power graph</i><br>
-          ======================= <br>
+          In another feed, the <strong> kWh </strong> used per day:
         </p>
-        
-      <p>
-        In another feed, the <strong> kWh </strong> used per day:
-      </p>
-        
-        <p>
-          ======================= <br>
-          <i>Picture of energy graph</i><br>
-          ======================= <br>
-        </p>
-        
+          
+        <img src="images/kwh_graph.png" alt="OpenEnergyMonitor Shop" width="168px" height="168px">
+      
+      </div>
+      
+      <div class="text_box three_in_a_row">
+          
         <p>
           You will also have a feed for your temperature data:
         </p>
           
-        <p>
-          ======================= <br>
-          <i>Picture of temp graph</i><br>
-          ======================= <br>
-        </p>
+        <img src="images/temperature_graph.png" alt="OpenEnergyMonitor Shop" width="168px" height="168px">
    
       </div>
         
-      <div class="text_box">
+      <div class="text_box all_across">
         
         <p>
-          You have <strong> 3 feeds </strong> in total.
-          Because all the hardware was bought from the shop, you will have enough
-          credits from your purchase to last <strong><span id="credit_lasting">10 years</span></strong>.
+          You have <strong> 3 feeds </strong> in total. <br>
+          <br>
+          Because all the hardware was bought from <br>
+          the <a href="https://openenergymonitor.com">OpenEnergyMonitor Shop</a>, <br>
+          you will have enough credits from your purchase <br>
+          to last <strong><span id="credit_lasting">10 years</span></strong>.
         </p>
     
       </div>
